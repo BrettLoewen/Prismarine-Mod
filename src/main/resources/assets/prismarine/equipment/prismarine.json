@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "wolf_body": [
+      {
+        "texture": "prismarine:prismarine"
+      }
+    ],
+    "horse_body": [
+      {
+        "texture": "prismarine:prismarine"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "prismarine:prismarine"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "prismarine:prismarine"
+      }
+    ]
+  }
+}
