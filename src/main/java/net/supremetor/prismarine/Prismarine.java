@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.supremetor.prismarine.item.ModItemGroups;
 import net.supremetor.prismarine.item.ModItems;
+import net.supremetor.prismarine.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +16,7 @@ public class Prismarine implements ModInitializer {
 	public void onInitialize() {
         ModItems.registerModItems();
         ModItemGroups.registerItemGroups();
+        ModLootTableModifiers.modifyLootTables();
 	}
 
     // Example of sending a message through chat using a player entity

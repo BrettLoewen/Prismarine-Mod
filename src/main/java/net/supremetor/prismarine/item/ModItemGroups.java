@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModItems.PRISMARINE_LEGGINGS);
                         entries.add(ModItems.PRISMARINE_BOOTS);
 
+                        entries.add(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE);
                     }).build());
 
     public static void registerItemGroups() {

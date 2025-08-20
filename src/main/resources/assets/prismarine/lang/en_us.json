@@ -4,5 +4,12 @@
   "item.prismarine.prismarine_leggings": "Prismarine Leggings",
   "item.prismarine.prismarine_boots": "Prismarine Boots",
 
+  "item.prismarine.prismarine_upgrade_smithing_template": "Prismarine Upgrade",
+
+//  "smithing_template.prismarine_upgrade.additions_slot_description": "Add Prismarine Ingot",
+//  "smithing_template.prismarine_upgrade.applies_to": "Diamond Equipment",
+//  "smithing_template.prismarine_upgrade.base_slot_description": "Add diamond armor, weapon, or tool",
+//  "smithing_template.prismarine_upgrade.ingredients": "Prismarine Ingot",
+
   "itemgroup.prismarine.prismarine_items": "Prismarine Items"
 }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:prismarine_shard",
+  "base": "minecraft:diamond_chestplate",
+  "result": {
+    "id": "prismarine:prismarine_chestplate"
+  },
+  "template": "prismarine:prismarine_upgrade_smithing_template"
+}
