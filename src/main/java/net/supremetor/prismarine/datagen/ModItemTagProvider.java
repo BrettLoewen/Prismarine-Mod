@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import net.supremetor.prismarine.item.ModItems;
+import net.supremetor.prismarine.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,8 +16,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-//        valueLookupBuilder(ModTags.Items.PINK_GARNET_REPAIR)
-//                .add(ModItems.PINK_GARNET);
+        valueLookupBuilder(ModTags.Items.PRISMARINE_REPAIR)
+                .add(ModItems.PRISMARINE_INGOT);
 
 //        valueLookupBuilder(ItemTags.SWORDS)
 //                .add(ModItems.PINK_GARNET_SWORD);

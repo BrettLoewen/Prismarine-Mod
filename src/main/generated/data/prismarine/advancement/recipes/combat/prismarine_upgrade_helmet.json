@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond_chestplate": {
+    "has_diamond_helmet": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:diamond_chestplate"
+            "items": "minecraft:diamond_helmet"
           }
         ]
       },
@@ -33,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "prismarine:prismarine_upgrade_chestplate"
+        "recipe": "prismarine:prismarine_upgrade_helmet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -43,12 +43,12 @@
       "has_the_recipe",
       "has_prismarine_upgrade_smithing_template",
       "has_prismarine_ingot",
-      "has_diamond_chestplate"
+      "has_diamond_helmet"
     ]
   ],
   "rewards": {
     "recipes": [
-      "prismarine:prismarine_upgrade_chestplate"
+      "prismarine:prismarine_upgrade_helmet"
     ]
   }
 }

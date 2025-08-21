@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": "prismarine:prismarine_ingot",
-  "base": "minecraft:diamond_chestplate",
+  "base": "minecraft:diamond_leggings",
   "result": {
-    "id": "prismarine:prismarine_chestplate"
+    "id": "prismarine:prismarine_leggings"
   },
   "template": "prismarine:prismarine_upgrade_smithing_template"
 }

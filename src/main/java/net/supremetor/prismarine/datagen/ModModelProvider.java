@@ -20,6 +20,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.PRISMARINE_INGOT, Models.GENERATED);
+
 //        itemModelGenerator.register(ModItems.PRISMARINE_SWORD, Models.HANDHELD);
 //        itemModelGenerator.register(ModItems.PRISMARINE_PICKAXE, Models.HANDHELD);
 //        itemModelGenerator.register(ModItems.PRISMARINE_SHOVEL, Models.HANDHELD);

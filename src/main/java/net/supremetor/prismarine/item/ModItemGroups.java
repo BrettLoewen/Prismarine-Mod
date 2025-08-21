@@ -16,6 +16,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(Items.PRISMARINE_SHARD))
                     .displayName(Text.translatable("itemgroup.prismarine.prismarine_items"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.PRISMARINE_INGOT);
+
 //                        entries.add(ModItems.PRISMARINE_SWORD);
 //                        entries.add(ModItems.PRISMARINE_PICKAXE);
 //                        entries.add(ModItems.PRISMARINE_SHOVEL);

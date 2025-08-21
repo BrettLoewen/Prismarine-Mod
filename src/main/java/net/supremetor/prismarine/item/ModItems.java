@@ -20,6 +20,8 @@ import java.util.List;
 import java.util.function.Function;
 
 public class ModItems {
+    public static final Item PRISMARINE_INGOT = registerItem("prismarine_ingot", Item::new);
+
     public static final Item PRISMARINE_HELMET = registerItem("prismarine_helmet",
             setting -> new ModArmorItem(setting.armor(ModArmorMaterials.PRISMARINE_ARMOR_MATERIAL, EquipmentType.HELMET)));
     public static final Item PRISMARINE_CHESTPLATE = registerItem("prismarine_chestplate",
