@@ -22,11 +22,11 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.PRISMARINE_INGOT, Models.GENERATED);
 
-//        itemModelGenerator.register(ModItems.PRISMARINE_SWORD, Models.HANDHELD);
-//        itemModelGenerator.register(ModItems.PRISMARINE_PICKAXE, Models.HANDHELD);
-//        itemModelGenerator.register(ModItems.PRISMARINE_SHOVEL, Models.HANDHELD);
-//        itemModelGenerator.register(ModItems.PRISMARINE_AXE, Models.HANDHELD);
-//        itemModelGenerator.register(ModItems.PRISMARINE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PRISMARINE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PRISMARINE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PRISMARINE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PRISMARINE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PRISMARINE_HOE, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(ModItems.PRISMARINE_HELMET, ModArmorMaterials.PRISMARINE_KEY, ItemModelGenerator.HELMET_TRIM_ID_PREFIX, false);
         itemModelGenerator.registerArmor(ModItems.PRISMARINE_CHESTPLATE, ModArmorMaterials.PRISMARINE_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);

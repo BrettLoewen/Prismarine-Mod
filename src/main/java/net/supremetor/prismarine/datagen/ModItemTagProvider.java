@@ -19,16 +19,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ModTags.Items.PRISMARINE_REPAIR)
                 .add(ModItems.PRISMARINE_INGOT);
 
-//        valueLookupBuilder(ItemTags.SWORDS)
-//                .add(ModItems.PINK_GARNET_SWORD);
-//        valueLookupBuilder(ItemTags.PICKAXES)
-//                .add(ModItems.PINK_GARNET_PICKAXE);
-//        valueLookupBuilder(ItemTags.SHOVELS)
-//                .add(ModItems.PINK_GARNET_SHOVEL);
-//        valueLookupBuilder(ItemTags.AXES)
-//                .add(ModItems.PINK_GARNET_AXE);
-//        valueLookupBuilder(ItemTags.HOES)
-//                .add(ModItems.PINK_GARNET_HOE);
+        valueLookupBuilder(ItemTags.SWORDS)
+                .add(ModItems.PRISMARINE_SWORD);
+        valueLookupBuilder(ItemTags.PICKAXES)
+                .add(ModItems.PRISMARINE_PICKAXE);
+        valueLookupBuilder(ItemTags.AXES)
+                .add(ModItems.PRISMARINE_AXE);
+        valueLookupBuilder(ItemTags.SHOVELS)
+                .add(ModItems.PRISMARINE_SHOVEL);
+        valueLookupBuilder(ItemTags.HOES)
+                .add(ModItems.PRISMARINE_HOE);
 
         valueLookupBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.PRISMARINE_HELMET)

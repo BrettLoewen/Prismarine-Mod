@@ -18,11 +18,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PRISMARINE_INGOT);
 
-//                        entries.add(ModItems.PRISMARINE_SWORD);
-//                        entries.add(ModItems.PRISMARINE_PICKAXE);
-//                        entries.add(ModItems.PRISMARINE_SHOVEL);
-//                        entries.add(ModItems.PRISMARINE_AXE);
-//                        entries.add(ModItems.PRISMARINE_HOE);
+                        entries.add(ModItems.PRISMARINE_SWORD);
+                        entries.add(ModItems.PRISMARINE_PICKAXE);
+                        entries.add(ModItems.PRISMARINE_SHOVEL);
+                        entries.add(ModItems.PRISMARINE_AXE);
+                        entries.add(ModItems.PRISMARINE_HOE);
 
                         entries.add(ModItems.PRISMARINE_HELMET);
                         entries.add(ModItems.PRISMARINE_CHESTPLATE);

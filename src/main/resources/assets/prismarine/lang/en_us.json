@@ -6,6 +6,12 @@
   "item.prismarine.prismarine_leggings": "Prismarine Leggings",
   "item.prismarine.prismarine_boots": "Prismarine Boots",
 
+  "item.prismarine.prismarine_sword": "Prismarine Sword",
+  "item.prismarine.prismarine_pickaxe": "Prismarine Pickaxe",
+  "item.prismarine.prismarine_axe": "Prismarine Axe",
+  "item.prismarine.prismarine_shovel": "Prismarine Shovel",
+  "item.prismarine.prismarine_hoe": "Prismarine Hoe",
+
   "item.prismarine.prismarine_upgrade_smithing_template": "Prismarine Upgrade",
 
   "item.prismarine.smithing_template.prismarine_upgrade.additions_slot_description": "Add Prismarine Ingot",

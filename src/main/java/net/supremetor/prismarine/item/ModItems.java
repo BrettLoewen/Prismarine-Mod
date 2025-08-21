@@ -1,9 +1,7 @@
 package net.supremetor.prismarine.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SmithingTemplateItem;
+import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -21,6 +19,17 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item PRISMARINE_INGOT = registerItem("prismarine_ingot", Item::new);
+
+    public static final Item PRISMARINE_SWORD = registerItem("prismarine_sword",
+            setting -> new Item(setting.sword(ModToolMaterials.PRISMARINE, 3.0f, -2.4f)));
+    public static final Item PRISMARINE_PICKAXE = registerItem("prismarine_pickaxe",
+            setting -> new Item(setting.pickaxe(ModToolMaterials.PRISMARINE, 1, -2.8f)));
+    public static final Item PRISMARINE_AXE = registerItem("prismarine_axe",
+            setting -> new AxeItem(ModToolMaterials.PRISMARINE, 5.0f, -3.0f, setting));
+    public static final Item PRISMARINE_SHOVEL = registerItem("prismarine_shovel",
+            setting -> new ShovelItem(ModToolMaterials.PRISMARINE, 1.5f, -3.0f, setting));
+    public static final Item PRISMARINE_HOE = registerItem("prismarine_hoe",
+            setting -> new HoeItem(ModToolMaterials.PRISMARINE, -4.0f, 0f, setting));
 
     public static final Item PRISMARINE_HELMET = registerItem("prismarine_helmet",
             setting -> new ModArmorItem(setting.armor(ModArmorMaterials.PRISMARINE_ARMOR_MATERIAL, EquipmentType.HELMET)));
@@ -75,10 +84,21 @@ public class ModItems {
             entries.add(PRISMARINE_CHESTPLATE);
             entries.add(PRISMARINE_LEGGINGS);
             entries.add(PRISMARINE_BOOTS);
+
+            entries.add(PRISMARINE_SWORD);
+            entries.add(PRISMARINE_AXE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(PRISMARINE_INGOT);
             entries.add(PRISMARINE_UPGRADE_SMITHING_TEMPLATE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(PRISMARINE_PICKAXE);
+            entries.add(PRISMARINE_AXE);
+            entries.add(PRISMARINE_SHOVEL);
+            entries.add(PRISMARINE_HOE);
         });
     }
 }

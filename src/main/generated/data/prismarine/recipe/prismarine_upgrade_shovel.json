@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "prismarine:prismarine_ingot",
+  "base": "minecraft:diamond_shovel",
+  "result": {
+    "id": "prismarine:prismarine_shovel"
+  },
+  "template": "prismarine:prismarine_upgrade_smithing_template"
+}

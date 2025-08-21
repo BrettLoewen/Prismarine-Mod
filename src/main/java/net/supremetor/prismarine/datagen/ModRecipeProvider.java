@@ -28,28 +28,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(wrapperLookup, recipeExporter) {
             @Override
             public void generate() {
-                // Temp recipe for upgrade template
-//                createShaped(RecipeCategory.MISC, ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE)
-//                        .pattern("RRR")
-//                        .pattern("RDR")
-//                        .pattern("RRR")
-//                        .input('R', Items.PRISMARINE_SHARD)
-//                        .input('D', Items.DIAMOND)
-//                        .criterion(hasItem(Items.PRISMARINE_SHARD), conditionsFromItem(Items.PRISMARINE_SHARD))
-//                        .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
-//                        .offerTo(exporter);
-
-//                SmithingTransformRecipeJsonBuilder.create(
-//                        Ingredient.ofItems(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE),
-//                        Ingredient.ofItems(Items.DIAMOND_CHESTPLATE),
-//                        Ingredient.ofItems(ModItems.PRISMARINE_INGOT),
-//                        RecipeCategory.COMBAT,
-//                        ModItems.PRISMARINE_CHESTPLATE
-//                )
-//                        .criterion(hasItem(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE))
-//                        .criterion(hasItem(ModItems.PRISMARINE_INGOT), conditionsFromItem(ModItems.PRISMARINE_INGOT))
-//                        .criterion(hasItem(Items.DIAMOND_CHESTPLATE), conditionsFromItem(Items.DIAMOND_CHESTPLATE))
-//                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(Prismarine.MOD_ID, "prismarine_upgrade_chestplate")));
+                offerSmithingTemplateCopyingRecipe(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE, Items.PRISMARINE);
 
                 generateSmithingTransformRecipe(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE, Items.DIAMOND_HELMET, ModItems.PRISMARINE_INGOT,
                         RecipeCategory.COMBAT, ModItems.PRISMARINE_HELMET, "prismarine_upgrade_helmet");
@@ -59,6 +38,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         RecipeCategory.COMBAT, ModItems.PRISMARINE_LEGGINGS, "prismarine_upgrade_leggings");
                 generateSmithingTransformRecipe(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE, Items.DIAMOND_BOOTS, ModItems.PRISMARINE_INGOT,
                         RecipeCategory.COMBAT, ModItems.PRISMARINE_BOOTS, "prismarine_upgrade_boots");
+
+                generateSmithingTransformRecipe(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE, Items.DIAMOND_SWORD, ModItems.PRISMARINE_INGOT,
+                        RecipeCategory.COMBAT, ModItems.PRISMARINE_SWORD, "prismarine_upgrade_sword");
+                generateSmithingTransformRecipe(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE, Items.DIAMOND_PICKAXE, ModItems.PRISMARINE_INGOT,
+                        RecipeCategory.TOOLS, ModItems.PRISMARINE_PICKAXE, "prismarine_upgrade_pickaxe");
+                generateSmithingTransformRecipe(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE, Items.DIAMOND_AXE, ModItems.PRISMARINE_INGOT,
+                        RecipeCategory.COMBAT, ModItems.PRISMARINE_AXE, "prismarine_upgrade_axe");
+                generateSmithingTransformRecipe(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE, Items.DIAMOND_SHOVEL, ModItems.PRISMARINE_INGOT,
+                        RecipeCategory.TOOLS, ModItems.PRISMARINE_SHOVEL, "prismarine_upgrade_shovel");
+                generateSmithingTransformRecipe(ModItems.PRISMARINE_UPGRADE_SMITHING_TEMPLATE, Items.DIAMOND_HOE, ModItems.PRISMARINE_INGOT,
+                        RecipeCategory.TOOLS, ModItems.PRISMARINE_HOE, "prismarine_upgrade_hoe");
             }
 
             private void generateSmithingTransformRecipe(Item template, Item appliesTo, Item ingredient, RecipeCategory recipeCategory,
