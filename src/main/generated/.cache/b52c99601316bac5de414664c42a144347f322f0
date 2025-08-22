@@ -1,5 +1,6 @@
 // 1.21.8	-999999999-01-01T00:00:00	Prismarine/Tags for minecraft:item
 37d903604108c30074c882ee66a1239f65d0be94 data/minecraft/tags/item/axes.json
+b0b2009c786f06042b0db013d6c18bf172d6a857 data/minecraft/tags/item/beacon_payment_items.json
 80bc2c76356bb08a2788a9fe0ff9fdfc3d407f7c data/minecraft/tags/item/hoes.json
 037be83f2ff8fc703785e8fccb65950213ac0ad5 data/minecraft/tags/item/pickaxes.json
 eeeeb78b96bf027b8d73248b814fe82886774791 data/minecraft/tags/item/shovels.json
