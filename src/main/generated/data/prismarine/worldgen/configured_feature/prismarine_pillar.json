@@ -1,0 +1,28 @@
+{
+  "type": "prismarine:block_pillar_growth",
+  "config": {
+    "height": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 5,
+      "min_inclusive": 2
+    },
+    "inner_block": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:prismarine"
+      }
+    },
+    "replaced_block": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:gravel"
+      }
+    },
+    "shell_block": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:tuff"
+      }
+    }
+  }
+}

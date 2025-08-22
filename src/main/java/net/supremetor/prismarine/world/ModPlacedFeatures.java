@@ -13,13 +13,18 @@ import net.supremetor.prismarine.Prismarine;
 import java.util.List;
 
 public class ModPlacedFeatures {
-    public static final RegistryKey<PlacedFeature> PRISMARINE_ORE_PLACED_KEY = registerKey("prismarine_ore_placed");
+    public static final RegistryKey<PlacedFeature> PRISMARINE_PILLAR_PLACED_KEY = registerKey("prismarine_pillar_placed");
+    public static final RegistryKey<PlacedFeature> PRISMARINE_DARK_PILLAR_PLACED_KEY = registerKey("prismarine_dark_pillar_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        register(context, PRISMARINE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PRISMARINE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(4,
+        register(context, PRISMARINE_PILLAR_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PRISMARINE_PILLAR_KEY),
+                ModOrePlacement.modifiersWithRarity(4,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(20), YOffset.fixed(50))));
+
+        register(context, PRISMARINE_DARK_PILLAR_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PRISMARINE_DARK_PILLAR_KEY),
+                ModOrePlacement.modifiersWithRarity(4,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(20), YOffset.fixed(50))));
     }
 
