@@ -69,6 +69,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public String getName() {
-        return "";
+        return "Prismarine Recipes";
     }
 }
