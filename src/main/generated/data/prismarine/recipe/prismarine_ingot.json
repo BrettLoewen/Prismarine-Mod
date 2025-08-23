@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "prismarine:prismarine_scrap",
+    "prismarine:prismarine_scrap",
+    "prismarine:prismarine_scrap",
+    "prismarine:prismarine_scrap",
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "prismarine:prismarine_ingot"
+  }
+}

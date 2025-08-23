@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "prismarine_ingot",
+  "ingredients": [
+    "prismarine:prismarine_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "prismarine:prismarine_ingot"
+  }
+}

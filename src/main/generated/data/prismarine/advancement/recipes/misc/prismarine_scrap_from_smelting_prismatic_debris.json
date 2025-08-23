@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_prismatic_debris": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prismarine:prismatic_debris"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "prismarine:prismarine_scrap_from_smelting_prismatic_debris"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_prismatic_debris"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "prismarine:prismarine_scrap_from_smelting_prismatic_debris"
+    ]
+  }
+}

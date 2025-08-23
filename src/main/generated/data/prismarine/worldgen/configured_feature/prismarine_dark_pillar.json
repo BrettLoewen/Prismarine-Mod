@@ -9,7 +9,7 @@
     "inner_block": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:dark_prismarine"
+        "Name": "prismarine:prismatic_debris"
       }
     },
     "replaced_block": {

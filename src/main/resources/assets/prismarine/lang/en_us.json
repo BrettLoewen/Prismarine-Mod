@@ -1,5 +1,6 @@
 {
   "item.prismarine.prismarine_ingot": "Prismarine Ingot",
+  "item.prismarine.prismarine_scrap": "Prismarine Scrap",
 
   "item.prismarine.prismarine_helmet": "Prismarine Helmet",
   "item.prismarine.prismarine_chestplate": "Prismarine Chestplate",
@@ -19,5 +20,9 @@
   "item.prismarine.smithing_template.prismarine_upgrade.base_slot_description": "Add diamond armor, weapon, or tool",
   "item.prismarine.smithing_template.prismarine_upgrade.ingredients": "Prismarine Ingot",
 
-  "itemgroup.prismarine.prismarine_items": "Prismarine Items"
+  "itemgroup.prismarine.prismarine_items": "Prismarine Items",
+
+  "block.prismarine.prismarine_block": "Block of Prismarine",
+  "block.prismarine.prismarine_crystal": "Prismarine Crystal",
+  "block.prismarine.prismatic_debris": "Prismatic Debris"
 }

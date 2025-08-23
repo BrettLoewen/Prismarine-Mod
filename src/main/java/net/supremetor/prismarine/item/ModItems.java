@@ -19,6 +19,7 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item PRISMARINE_INGOT = registerItem("prismarine_ingot", Item::new);
+    public static final Item PRISMARINE_SCRAP = registerItem("prismarine_scrap", Item::new);
 
     public static final Item PRISMARINE_SWORD = registerItem("prismarine_sword",
             setting -> new Item(setting.sword(ModToolMaterials.PRISMARINE, 3.0f, -2.4f)));

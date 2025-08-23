@@ -1,2 +1,4 @@
 // 1.21.8	-999999999-01-01T00:00:00	Prismarine/Tags for minecraft:block
-f3ee3e9f4d805175b4159d340a67f5785597e559 data/minecraft/tags/block/beacon_base_blocks.json
+265e429fb4b2d454da2063c5386f2224460d9435 data/minecraft/tags/block/beacon_base_blocks.json
+9a693f0cd2be49f3417da55a22ef8aebe053a95b data/minecraft/tags/block/mineable/pickaxe.json
+05afe028753543ddf0c360dc16520f05684d7791 data/minecraft/tags/block/needs_diamond_tool.json

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
+import net.supremetor.prismarine.block.ModBlocks;
 import net.supremetor.prismarine.item.ModArmorMaterials;
 import net.supremetor.prismarine.item.ModItems;
 
@@ -15,11 +16,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PRISMARINE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PRISMATIC_DEBRIS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PRISMARINE_CRYSTAL);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.PRISMARINE_SCRAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRISMARINE_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PRISMARINE_SWORD, Models.HANDHELD);

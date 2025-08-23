@@ -2,19 +2,13 @@ package net.supremetor.prismarine.world;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.*;
-import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
-import net.minecraft.structure.rule.RuleTest;
-import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.supremetor.prismarine.Prismarine;
+import net.supremetor.prismarine.block.ModBlocks;
 import net.supremetor.prismarine.world.custom.BlockPillarGrowthConfig;
-import net.supremetor.prismarine.world.custom.BlockPillarGrowthFeature;
-
-import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRISMARINE_PILLAR_KEY = registerKey("prismarine_pillar");
@@ -22,14 +16,14 @@ public class ModConfiguredFeatures {
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         register(context, PRISMARINE_PILLAR_KEY, Prismarine.BLOCK_PILLAR_GROWTH, new BlockPillarGrowthConfig(
-                BlockStateProvider.of(Blocks.PRISMARINE),
+                BlockStateProvider.of(ModBlocks.PRISMARINE_CRYSTAL),
                 BlockStateProvider.of(Blocks.TUFF),
                 BlockStateProvider.of(Blocks.GRAVEL),
                 UniformIntProvider.create(2, 5)
         ));
 
         register(context, PRISMARINE_DARK_PILLAR_KEY, Prismarine.BLOCK_PILLAR_GROWTH, new BlockPillarGrowthConfig(
-                BlockStateProvider.of(Blocks.DARK_PRISMARINE),
+                BlockStateProvider.of(ModBlocks.PRISMATIC_DEBRIS),
                 BlockStateProvider.of(Blocks.TUFF),
                 BlockStateProvider.of(Blocks.GRAVEL),
                 UniformIntProvider.create(2, 5)

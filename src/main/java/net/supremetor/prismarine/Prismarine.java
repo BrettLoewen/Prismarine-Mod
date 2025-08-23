@@ -6,6 +6,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.Feature;
+import net.supremetor.prismarine.block.ModBlocks;
 import net.supremetor.prismarine.item.ModItemGroups;
 import net.supremetor.prismarine.item.ModItems;
 import net.supremetor.prismarine.util.ModLootTableModifiers;
@@ -27,6 +28,7 @@ public class Prismarine implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
         ModItemGroups.registerItemGroups();
         ModLootTableModifiers.modifyLootTables();
         ModWorldGeneration.generateModWorldGen();
